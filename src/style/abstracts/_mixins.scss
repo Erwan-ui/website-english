@@ -12,6 +12,15 @@
 ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 */
+@mixin absCenter {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+
+
 @mixin respond($breakpoint) {
   // Phone-xs
   @if $breakpoint == phone-xs {
